@@ -8,6 +8,7 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
+    maxParallel: 1
       linux_64_cuda_compiler_version10.2cudnn7numpy1.18python3.7.____cpython:
         CONFIG: linux_64_cuda_compiler_version10.2cudnn7numpy1.18python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
